@@ -39,10 +39,7 @@ const Ourwork = () => {
 
         <div className=' absolute top-125 left-85 border border-white/20 rounded-2xl bg-black/30 w-70 h-40 '>
         <img src="/vector-red.png" alt="" className='absolute left-5 top-3' />
-        {slides.map((s) => (
-          <h1>{s.title}</h1>
-
-        ))}
+        
         
           
         </div>
