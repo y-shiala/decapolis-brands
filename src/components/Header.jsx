@@ -5,13 +5,13 @@ const Header = () => {
   const navlinks = [
     { href: "/", label: "Home" },
     { href: "/about-us", label: "AboutUs" },
-    { href: "/", label: "Expertise" },
+    { href: "/expertise", label: "Expertise" },
     { href: "/", label: "Case Studies" },
     { href: "/", label: "Our Team" },
     { href: "/", label: "ContactUs" }
   ]
   return (
-    <div className="absolute top-0 left-0 w-full z-20 ">
+    <div className="absolute top-0 left-0 w-full z-200 ">
       <div className=" mx-auto max-w-[1400px] flex flex-row justify-between  gap-25 items-center sticky bg-transparent top-0 z-20 ">
 
       <Link to="/">

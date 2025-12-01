@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <div className='relative z-10 bg-black h-[850px] text-white overflow-hidden '>
       <HeroCaurosel />
-      <Header />
+      
 
       <div>
         <div className="absolute left-29 top-34 ">
