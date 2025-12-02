@@ -104,7 +104,7 @@ const AboutUs = () => {
           Lorem ipsum dolor sit amet consectetur, <br /> adipisicing elit. A ipsum laboriosam magnam suscipit, vel accusantium dolorum neque reiciendis sequi assumenda ullam. Quasi, excepturi molestias quae itaque consequuntur praesentium sit ad atque dignissimos, debitis sint adipisci rerum modi earum voluptates totam odio, hic ex deleniti. Deleniti nesciunt quod cumque fugit enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, quisquam.
         </p>
       </main>
-      <Footer />
+      
     </div>
   )
 }
