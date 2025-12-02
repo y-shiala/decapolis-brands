@@ -39,17 +39,17 @@ const UxUi = () => {
           <div className='relative rounded-full h-14 w-14 bg-gradient-to-r from-[#FF0000] to-[#3D0000]  '>
             <img src="/Arrow 1.png" alt="" className='absolute left-3 top-5' />
           </div>
-          <div className=' flex flex-row gap-2 align-top items-center'>
+          <div className=' flex flex-row gap-2 align-top items-center mt-3'>
             <div className='relative flex gap-2  text-center place-items-baseline'>
               <h1 className='text-red-600 text-5xl font-bold'>01.</h1>
               <h1 className='relative text-white  text-3xl font-light mb-5'>
                 UX - UI DESIGN
-                
+
                 <span className={`absolute -top-18 -right-28 inline-block text-8xl text-transparent   bg-gradient-to-r from-[#FF0000] to-[#3D0000]   bg-clip-text `} >...</ span>
 
-            
+
               </h1>
-             
+
 
 
             </div>
@@ -63,11 +63,11 @@ const UxUi = () => {
         <p className='text-white text-2xl mt-15'>This is the process of mapping out the user's entire interaction with a product to make it logical, intuitive, and enjoyable. from your website to your mobile application</p>
 
         <div className='mt-15'>
-          <div className='flex flex-row gap-5'>
+          <div className='flex flex-row gap-13'>
             {cards.map((card, index) => (
               <div
                 key={index}
-                className='flex flex-col gap-5 py-10 px-14 border text-white border-white rounded-2xl flex-1'>
+                className='flex flex-col gap-5 py-10 px-16 border text-white border-white rounded-2xl flex-1'>
                 <div className='flex gap-3 justify-center items-center text-red-600'>
                   <p className='text-2xl'>{card.number}</p>
                   <h1 className='text-2xl'>{card.title}</h1>
@@ -106,7 +106,7 @@ const UxUi = () => {
               WEB APP AND MOBILE <br />
               APP UI AND UX DESIGN
             </h1>
-            <Button className='border border-white text-white text-2xl py-7 px-18'>
+            <Button className='border border-white rounded-2xl text-white font-light text-2xl py-8 px-18'>
               View on Figma
             </Button>
           </div>
