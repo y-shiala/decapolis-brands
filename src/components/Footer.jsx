@@ -28,12 +28,12 @@ const Footer = () => {
   ];
 
   return (
-    <div className='bg-black p-4 '>
-      <div className='flex flex-row justify-between border-t-2 border-white/30 w-[80%] m-auto'>
+    <div className='bg-black px-30 m-auto p-8 '>
+      <div className='flex flex-row justify-between border-t-2 border-white/30  m-auto'>
         <div className="">
           <Link to="/">
             <div className="h-35 p-0 w-auto flex items-center">
-              <img src="logo2.png" alt="logo" className=" h-full w-auto " />
+              <img src="/logo2.png" alt="logo" className=" h-full w-auto " />
 
             </div>
           </Link>

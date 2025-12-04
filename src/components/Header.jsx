@@ -16,7 +16,7 @@ const Header = () => {
 
       <Link to="/">
         <div className="h-45  w-auto flex items-center">
-          <img src="logo1.png" alt="logo" className=" h-full w-auto " />
+          <img src="/logo1.png" alt="logo" className=" h-full w-auto " />
 
         </div>
 

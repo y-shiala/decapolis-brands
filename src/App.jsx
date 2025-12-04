@@ -23,7 +23,8 @@ const App = () => {
         <Route path='/uiux' element={<UxUi />} />
         <Route path='/web-app' element={<WebApp />} />
         <Route path='/branding-customization' element={<BrandingCustomization />} />
-        <Route path='/graphic-design' element={<GraphicDesign />} />
+        <Route path='/graphic-design/*' element={<GraphicDesign />} />
+        {/* category pages are rendered inline inside GraphicDesign; separate routes removed */}
         <Route path='/content-creation' element={<ContentCreation />} />
         <Route path='/digital-marketing' element={<DigitalMarketing />} />
 

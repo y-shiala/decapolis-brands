@@ -11,7 +11,11 @@ const AboutUs = () => {
           <h1 className='text-3xl '>
             We'll make you
           </h1>
+          <h1 className='absolute top-80 left-145 text-8xl w-xl font-bold text-red-600'>Visible</h1>
           <img src="/about-vector.png" alt="Red Vector" className='mt-5' />
+          <img src="/about-v.png" alt="" className='absolute top-53 left-0 ' />
+          <img src="/about-ve.png" alt="" className='absolute bottom-43 right-25 ' />
+          <img src="/about-vec.png" alt="" className='absolute top-33 right-0 ' />
         </div>
         <div className='flex flex-row items-center gap-5 py-15  ml-38'>
 
