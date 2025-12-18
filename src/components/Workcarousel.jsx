@@ -1,10 +1,10 @@
-import { useState } from "react";
-import { 
-  FaCircleChevronRight, 
-  FaCircleChevronLeft 
+import React, { useState, useEffect } from "react";
+import {
+  FaCircleChevronRight,
+  FaCircleChevronLeft
 } from "react-icons/fa6";
 
-const Workcarousel = ({ slides }) => {
+const Workcarousel = ({ slides, onSlideChange }) => {
   const [current, setCurrent] = useState(0);
 
   const previousSlide = () => {
@@ -14,6 +14,11 @@ const Workcarousel = ({ slides }) => {
   const nextSlide = () => {
     setCurrent(current === slides.length - 1 ? 0 : current + 1);
   };
+
+  // notify parent when current changes
+  useEffect(() => {
+    if (typeof onSlideChange === 'function') onSlideChange(current);
+  }, [current, onSlideChange]);
 
   return (
     <div className="overflow-x-hidden w-[883.36px] h-[556.18px] relative mx-auto">
@@ -26,28 +31,30 @@ const Workcarousel = ({ slides }) => {
         }}
       >
         {slides.map((s, index) => (
-          <div 
+          <div
             key={index}
             className="relative w-[883.36px] h-[556.18px] shrink-0  "
           >
-            <img 
+            <img
               src={s.image}
               alt={s.title}
               className="w-full h-full object-cover rounded-2xl "
             />
 
-            
-            
+
+
           </div>
 
-          
+
         ))}
+
       </div>
+
 
       {/* BUTTONS */}
       <div className="absolute inset-0 flex justify-between items-center text-white px-10 text-3xl">
-        <button onClick={previousSlide}><FaCircleChevronLeft/></button>
-        <button onClick={nextSlide}><FaCircleChevronRight/></button>
+        <button onClick={previousSlide}><FaCircleChevronLeft /></button>
+        <button onClick={nextSlide}><FaCircleChevronRight /></button>
       </div>
     </div>
   );

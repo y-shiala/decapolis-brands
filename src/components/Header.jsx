@@ -7,8 +7,8 @@ const Header = () => {
     { href: "/about-us", label: "AboutUs" },
     { href: "/expertise", label: "Expertise" },
     { href: "/", label: "Case Studies" },
-    { href: "/", label: "Our Team" },
-    { href: "/", label: "ContactUs" }
+    { href: "/our-team", label: "Our Team" },
+    { href: "/contact-us", label: "ContactUs" }
   ]
   return (
     <div className="absolute top-0 left-0 w-full z-200 ">

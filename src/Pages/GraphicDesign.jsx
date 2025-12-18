@@ -56,7 +56,7 @@ const GraphicDesign = () => {
     <div className='mt-8 grid grid-row-2 gap-6'>
       {Array.from({ length: 2 }).map((_, i) => (
         <div key={i} className='bg-white rounded-xl h-128 flex  items-center justify-center'>
-          
+
         </div>
       ))}
     </div>
@@ -66,7 +66,7 @@ const GraphicDesign = () => {
     <div className='mt-8 grid grid-row-3 gap-6'>
       {Array.from({ length: 3 }).map((_, i) => (
         <div key={i} className='bg-white rounded-xl h-118 flex items-center justify-center'>
-         
+
         </div>
       ))}
     </div>
@@ -76,19 +76,24 @@ const GraphicDesign = () => {
     <div className='mt-8 grid grid-row-2 gap-6'>
       {Array.from({ length: 2 }).map((_, i) => (
         <div key={i} className='bg-white rounded-xl h-128 flex items-center justify-center'>
-          
+
         </div>
       ))}
     </div>
   );
+
+   
   return (
     <div className='min-h-screen bg-black'>
       <Header />
 
       <div className='pt-45 px-30 m-auto'>
         <div>
-          <div className='relative rounded-full h-14 w-14 bg-gradient-to-r from-[#FF0000] to-[#3D0000]  '>
-            <img src="/Arrow 1.png" alt="" className='absolute left-3 top-5' />
+          <div
+            onClick={() => navigate('/expertise')}
+            className='relative rounded-full h-14 w-14 bg-gradient-to-r from-[#FF0000] to-[#3D0000] cursor-pointer hover:opacity-80 transition-opacity'
+          >
+            <img src="/Arrow 1.png" alt="Go to expertise" className='absolute left-3 top-5' />
           </div>
           <div className=' flex flex-row gap-2 align-top items-center mt-3'>
             <div className='relative flex gap-2  text-center place-items-baseline'>

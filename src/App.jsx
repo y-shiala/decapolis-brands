@@ -10,6 +10,8 @@ import BrandingCustomization from './Pages/BrandingCustomization'
 import GraphicDesign from './Pages/GraphicDesign'
 import ContentCreation from './Pages/ContentCreation'
 import DigitalMarketing from './Pages/DigitalMarketing'
+import OurTeam from './Pages/OurTeam'
+import ContactUs from './Pages/ContactUs'
 
 const App = () => {
   return (
@@ -25,7 +27,11 @@ const App = () => {
         <Route path='/branding-customization' element={<BrandingCustomization />} />
         <Route path='/graphic-design/*' element={<GraphicDesign />} />
         {/* category pages are rendered inline inside GraphicDesign; separate routes removed */}
-        <Route path='/content-creation' element={<ContentCreation />} />
+        <Route path='/content-creation/*' element={<ContentCreation />} />
+        <Route path='/our-team' element={<OurTeam />} />
+        <Route path='/contact-us' element={<ContactUs />} />
+
+        
         <Route path='/digital-marketing' element={<DigitalMarketing />} />
 
       </Routes>

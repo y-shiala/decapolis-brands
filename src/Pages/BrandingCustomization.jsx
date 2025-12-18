@@ -1,10 +1,12 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import Header from '../components/Header'
 import BrandingCard from '../components/BrandingCard'
 import { productCategories } from '../constants'
 import { Button } from '../components/ui/Button'
 
 const BrandingCustomization = () => {
+  const navigate = useNavigate();
 
 
 
@@ -13,8 +15,11 @@ const BrandingCustomization = () => {
       <Header />
       <div className='pt-45 px-30 m-auto'>
         <div>
-          <div className='relative rounded-full h-14 w-14 bg-gradient-to-r from-[#FF0000] to-[#3D0000]  '>
-            <img src="/Arrow 1.png" alt="" className='absolute left-3 top-5' />
+          <div
+            onClick={() => navigate('/expertise')}
+            className='relative rounded-full h-14 w-14 bg-gradient-to-r from-[#FF0000] to-[#3D0000] cursor-pointer hover:opacity-80 transition-opacity'
+          >
+            <img src="/Arrow 1.png" alt="Go to expertise" className='absolute left-3 top-5' />
           </div>
           <div className=' flex flex-row gap-2 align-top items-center mt-3'>
             <div className='relative flex gap-2  text-center place-items-baseline'>

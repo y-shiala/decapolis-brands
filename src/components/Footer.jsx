@@ -43,7 +43,9 @@ const Footer = () => {
             can’t be hid
           </p>
           <div className="flex flex-row gap-2">
-            <TfiInstagram className="text-white text-l" />
+
+            <img src="/socials.png" alt=""  />
+            {/* <TfiInstagram className="text-white text-l" />
             <TfiInstagram className="text-white text-l" />
             <div className="  ">
               <TfiInstagram className="  text-white text-l" />
@@ -51,7 +53,7 @@ const Footer = () => {
             </div>
 
             <TfiInstagram className="text-white text-l" />
-            <TfiInstagram className="text-white text-l" />
+            <TfiInstagram className="text-white text-l" /> */}
 
           </div>
 

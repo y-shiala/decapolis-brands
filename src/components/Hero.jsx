@@ -32,10 +32,10 @@ const Hero = () => {
 
         </div>
       </div>
-      <div className='absolute top-149 left-116'>
+      <div className='absolute top-139 left-116'>
         <h1 className='text-4xl text-white/90 font-bold'>You Can't <br /> Be Hid</h1>
       </div>
-      <div className='absolute top-139 left-100'>
+      <div className='absolute top-129 left-100'>
         <img src="/Layer_1.png" alt="" className='w-70' />
       </div>
       <div className='absolute top-62 left-100'>
@@ -47,7 +47,7 @@ const Hero = () => {
       <div className='absolute top-149 left-170'>
         <img src="/vector-18.png" alt="" className='h-40' />
       </div>
-      <div className='absolute right-35  top-82 font-Afacade '>
+      <div className='absolute right-55  top-82 font-Afacade '>
 
         <h1 className='mr-10 text-end font-bold text-5xl '>
           We are

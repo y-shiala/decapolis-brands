@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../components/Header'
 import { Button } from '../components/ui/Button'
 import DigitalCard from '../components/DigitalCard'
+import { useNavigate } from 'react-router-dom'
 
 const DigitalMarketing = () => {
   const strategies = [
@@ -42,19 +43,24 @@ const DigitalMarketing = () => {
       text: 'Learn More'
     },
   ]
+
+  const navigate = useNavigate();
   return (
     <div className='min-h-screen bg-black'>
       <Header />
       <div className='pt-45 px-30 m-auto'>
         <div>
-          <div className='relative rounded-full h-14 w-14 bg-gradient-to-r from-[#FF0000] to-[#3D0000]  '>
-            <img src="/Arrow 1.png" alt="" className='absolute left-3 top-5' />
+          <div
+            onClick={() => navigate('/expertise')}
+            className='relative rounded-full h-14 w-14 bg-gradient-to-r from-[#FF0000] to-[#3D0000] cursor-pointer hover:opacity-80 transition-opacity'
+          >
+            <img src="/Arrow 1.png" alt="Go to expertise" className='absolute left-3 top-5' />
           </div>
           <div className=' flex flex-row gap-2 align-top items-center mt-3'>
             <div className='relative flex gap-2  text-center place-items-baseline'>
-              <h1 className='text-red-600 text-5xl font-bold'>01.</h1>
+              <h1 className='text-red-600 text-5xl font-bold'>06.</h1>
               <h1 className='relative text-white text-start text-3xl font-light mb-5'>
-                DIGITAL MARKETING          
+                DIGITAL MARKETING
 
                 <span className={`absolute -top-18 -right-28 inline-block text-8xl text-transparent   bg-gradient-to-r from-[#FF0000] to-[#3D0000]   bg-clip-text `} >...</ span>
 
@@ -70,29 +76,29 @@ const DigitalMarketing = () => {
 
         </div>
         <div className='border border-white w-95' />
-        <p className='text-white text-l w-280 mt-10'>
+        <p className='text-white ml-3 text-l w-280 mt-10'>
           We help brands grow online through strategic, data-driven digital marketing solutions. From social media management and targeted ads to content strategy, SEO, and brand engagement, we create campaigns that drive real results. Our approach combines creativity with analytics to ensure your brand reaches the right audience, at the right time, with the right message. Whether you’re looking to increase visibility, boost sales, or build a strong online community, we deliver digital marketing strategies designed to elevate your brand and achieve measurable growth.
         </p>
 
         <div>
-        <div className='w-[90%] flex flex-wrap gap-10  justify-between  mt-15   '>
-          {strategies.map((strategy, index) => (
-            <DigitalCard
-              key={index}
-              image={strategy.image}
-              title={strategy.title}
-              description={strategy.description}
-              text={strategy.text} 
-            
-            />
-          ))}
+          <div className=' flex flex-wrap gap-21  justify-around  mt-15   '>
+            {strategies.map((strategy, index) => (
+              <DigitalCard
+                key={index}
+                image={strategy.image}
+                title={strategy.title}
+                description={strategy.description}
+                text={strategy.text}
+
+              />
+            ))}
+
+          </div>
 
         </div>
-        
-      </div> 
 
       </div>
-        
+
 
 
       <div className=' bg-gradient-to-r from-[#FF0000] to-[#3D0000] h-60 mt-10 text-center items-center'>

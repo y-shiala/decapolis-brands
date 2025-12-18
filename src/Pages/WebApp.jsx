@@ -1,15 +1,20 @@
 import React from 'react'
 import Header from '../components/Header'
 import { Button } from '../components/ui/Button'
+import { useNavigate } from 'react-router-dom'
 
 const WebApp = () => {
+  const navigate = useNavigate();
   return (
     <div className='min-h-screen bg-black'>
       <Header />
       <div className='pt-45 px-30 m-auto'>
         <div>
-          <div className='relative rounded-full h-14 w-14 bg-gradient-to-r from-[#FF0000] to-[#3D0000]  '>
-            <img src="/Arrow 1.png" alt="" className='absolute left-3 top-5' />
+          <div
+            onClick={() => navigate('/expertise')}
+            className='relative rounded-full h-14 w-14 bg-gradient-to-r from-[#FF0000] to-[#3D0000] cursor-pointer hover:opacity-80 transition-opacity'
+          >
+            <img src="/Arrow 1.png" alt="Go to expertise" className='absolute left-3 top-5' />
           </div>
           <div className=' flex flex-row gap-2 align-top items-center mt-3'>
             <div className='relative flex gap-2  text-center place-items-baseline'>
@@ -154,7 +159,7 @@ const WebApp = () => {
       </div>
       <div className=' bg-gradient-to-r from-[#FF0000] to-[#3D0000] h-60 mt-10 text-center items-center'>
         <h1 className='text-white text-4xl pt-8 font-bold'>
-          For development project we  deliver  
+          For development project we  deliver
         </h1>
         <p className='text-white mt-5 mx-80'>
           We build solutions that drive growth and deliver seamless user experiences. Contact us today to start <br /> your project!
@@ -164,7 +169,7 @@ const WebApp = () => {
         </Button>
 
 
-      </div> 
+      </div>
 
 
 
