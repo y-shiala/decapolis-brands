@@ -65,7 +65,7 @@ const Hero = () => {
         <div className='flex flex-row items-center gap-5 '>
           <div className='border-t w-150   border-white/20' />
 
-          <div className=" border-2 border-primary rounded-3xl px-10 py-4 flex-none">
+          <div className=" border-2 border-white/20 rounded-3xl px-10 py-4 flex-none">
             <h2 className="text-5xl font-bold text-red-600 mb-2">Our Work</h2>
             <p className="text-foreground">We are Good at what we do</p>
           </div>

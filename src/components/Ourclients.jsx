@@ -46,7 +46,7 @@ const Ourclients = () => {
       <div className='absolute top-380 left-68 right-80'>
         <div className='flex flex-row items-center gap-5 '>
 
-          <div className=" border border-white rounded-3xl px-8 py-4 flex-none">
+          <div className=" border border-white/20 rounded-3xl px-8 py-4 flex-none">
             <h2 className="text-5xl font-bold text-red-600 mb-2">Our Clients</h2>
             <p className="text-white">We've worked with <br /> amazing brands</p>
           </div>
